@@ -1,15 +1,22 @@
 <html>
-<head>
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="jsbeat.js"></script>
-    
-    <style>
-        .blinkOn {
-            background-color: cyan;
-        }
-    </style>
-</head>
-<body>
-    <div id='bpm'>BPM:</div><div id='beat'></div>
-</body>
+    <head>
+        <title>Beats per minute demo</title>
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="blink.js"></script>    
+        <script src="jsbeat.js"></script>    
+        <script src="demo.js"></script>    
+        <style>
+            .blinkOn {
+                background-color: cyan;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Clap your hand 3 times to get the beats per minute (BPM).</h1>
+        Tested on Chrome version 33.  Allow access to your microphone.  The script will listen for loud sounds and try
+        to determine the timing between sounds as beats per minute.  It will then apply the "blinkOn" class to the bpm control
+        at the same frequency & play a click in the speaker.
+        <p/>
+        <div id='bpm'>BPM:</div><div id='beat'></div>
+    </body>
 </html>
